@@ -8,7 +8,7 @@ public class PlantplacesController {
 
 	@RequestMapping("/start")
 	public String start(){
-		return "start";
+		return "start"; 
 	}
 	
 }
