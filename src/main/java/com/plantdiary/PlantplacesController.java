@@ -1,4 +1,4 @@
-package com.plantdiary.plantdiary;
+package com.plantdiary;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

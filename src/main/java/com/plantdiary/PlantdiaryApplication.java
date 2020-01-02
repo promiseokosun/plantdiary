@@ -1,4 +1,4 @@
-package com.plantdiary.plantdiary;
+package com.plantdiary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
