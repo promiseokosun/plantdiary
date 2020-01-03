@@ -5,9 +5,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Start Page coming soon...</h1>
+<h1>Welcome to PlantDiary</h1>
 
-<p th:text="${specimenDTO}" />
+Your specimen is: <p th:text="${specimenDTO}" />
+
+<form action="#" th:action="@{/savespecimen}" th:object="${specimenDTO}" method="GET">
+Latitude: <input type="text" name="latitude" th:field="*{latitude}" /><br/>
+Longitude: <input type="text" name="longitude" th:field="*{longitude}" /> <br/>
+Description: <input type="text" name="longitude" th:field="*{description}" /> <br/>
+Plant: <input type="text" name="longitude" th:field="*{plantId}" /> <br/>
+
+<button type="submit" name="submit" value="0">Submit</button>
+
+</form>
 
 </body>
 </html>

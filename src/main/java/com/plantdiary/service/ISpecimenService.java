@@ -1,5 +1,9 @@
 package com.plantdiary.service;
 
+import java.util.List;
+
+import com.plantdiary.dao.ISpecimenDAO;
+import com.plantdiary.dto.PlantDTO;
 import com.plantdiary.dto.SpecimenDTO;
 
 public interface ISpecimenService {
@@ -15,6 +19,17 @@ public interface ISpecimenService {
 	 * Persist the given specimenDTO
 	 * @param specimenDTO
 	 */
-	void save(SpecimenDTO specimenDTO);
+	boolean save(SpecimenDTO specimenDTO) throws Exception;
+	
+	/**
+	 * Return a list of plants that contain this String.
+	 * @param string is the search criteria: can be genus, species, or common.
+	 * @return a list of matching plants.
+	 */
+	List<PlantDTO> fetchPlants(String string);
+
+	void setSpecimenDAO(ISpecimenDAO specimenDAO);
+
+	ISpecimenDAO getSpecimenDAO();
 
 }

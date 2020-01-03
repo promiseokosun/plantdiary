@@ -1,6 +1,6 @@
 package com.plantdiary;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -41,6 +41,10 @@ public class JUnitAnnotationExamples {
 	public void runMoreTest(){
 		double i = 1.2 + 1;
 		assertEquals(2, i, 0.3); // delta is the clearance i.e the actual should not deviate from the expected more than 0.3
+		Object obj = null;
+		assertNull(obj);
+		assertTrue(4 == 2 + 2);
+	
 	}
 
 }

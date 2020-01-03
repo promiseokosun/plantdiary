@@ -19,32 +19,35 @@ public class PlantplacesController {
 	private ISpecimenService specimenServiceStub;
 	private SpecimenDTO specimenDTO;
 	
+	
+	@RequestMapping(value="/savespecimen")
+	public String saveSpecimen(SpecimenDTO specimenDTO) {
+		specimenDTO.setPlantId(13);
+		//specimenDTO.setSpecimenId(80);
+		
+		return "start";
+	}
+	
 	/**
 	 * Handle the /start endpoint
 	 * @return
 	 */
 	
+//	@RequestMapping(value="/start", method=RequestMethod.GET, headers="{content-type=text/json}")
+//	@ResponseBody // to return an object in json format
+//	public SpecimenDTO read(Model model, @RequestParam(value="latitude", required=false, defaultValue="0.0") String latitude){ 
+//		specimenDTO = specimenServiceStub.fetchById(43);
+//		model.addAttribute("specimenDTO", specimenDTO);
+//		return specimenDTO; 
+//	}
 	
-
 	@RequestMapping(value="/start", method=RequestMethod.GET)
-	@ResponseBody // to return an object in json format
-	public SpecimenDTO read(Model model, @RequestParam(value="latitude", required=false, defaultValue="0.0") String latitude){ 
-		
-		specimenDTO = specimenServiceStub.fetchById(43);
-		specimenDTO.setLatitude(latitude);
-		specimenDTO.setLongitude("-81.2");
-		specimenDTO.setDescription("A beautiful Red bud flower");
-		
-		model.addAttribute("specimenDTO", specimenDTO);
-		
-		return specimenDTO; 
-	}
-	
-	@RequestMapping(value="/start", method=RequestMethod.GET, headers="{content-type=text/json}")
-	public String startJson(){ 
+	public String read(Model model){ 
+		model.addAttribute("specimenDTO", new SpecimenDTO());
 		return "start"; 
 	}
-	
+
+		
 	@RequestMapping(value="/start", params={"loyalty=blue"})
 	public ModelAndView create(){ 
 		
