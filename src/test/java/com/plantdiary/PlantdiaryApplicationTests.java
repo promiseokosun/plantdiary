@@ -1,4 +1,4 @@
-package com.plantdiary.plantdiary;
+package com.plantdiary;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

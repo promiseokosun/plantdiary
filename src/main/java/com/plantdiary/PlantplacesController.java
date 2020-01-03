@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.plantdiary.dto.SpecimenDTO;
@@ -26,7 +27,8 @@ public class PlantplacesController {
 	
 
 	@RequestMapping(value="/start", method=RequestMethod.GET)
-	public String read(Model model, @RequestParam(value="latitude", required=false, defaultValue="0.0") String latitude){ 
+	@ResponseBody // to return an object in json format
+	public SpecimenDTO read(Model model, @RequestParam(value="latitude", required=false, defaultValue="0.0") String latitude){ 
 		
 		specimenDTO = specimenServiceStub.fetchById(43);
 		specimenDTO.setLatitude(latitude);
@@ -35,7 +37,7 @@ public class PlantplacesController {
 		
 		model.addAttribute("specimenDTO", specimenDTO);
 		
-		return "start"; 
+		return specimenDTO; 
 	}
 	
 	@RequestMapping(value="/start", method=RequestMethod.GET, headers="{content-type=text/json}")
