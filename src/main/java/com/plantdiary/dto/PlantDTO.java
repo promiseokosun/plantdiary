@@ -1,11 +1,24 @@
 package com.plantdiary.dto;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class PlantDTO {
-	
+
+	@SerializedName("guid")
+	@Expose
 	private int guid;
+	@SerializedName("genus")
+	@Expose
 	private String genus;
+	@SerializedName("species")
+	@Expose
 	private String species;
+	@SerializedName("cultivar")
+	@Expose
 	private String cultivar;
+	@SerializedName("common")
+	@Expose
 	private String common;
 	
 	public int getGuid() {
@@ -37,6 +50,12 @@ public class PlantDTO {
 	}
 	public void setCommon(String common) {
 		this.common = common;
+	}
+	
+	@Override
+	public String toString() {
+		return "PlantDTO [guid=" + guid + ", genus=" + genus + ", species=" + species + ", cultivar=" + cultivar
+				+ ", common=" + common + "]";
 	}
 	
 	

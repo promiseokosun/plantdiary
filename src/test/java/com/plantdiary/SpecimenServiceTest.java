@@ -54,12 +54,22 @@ public class SpecimenServiceTest {
 	
 	private void givenUserIsLoggedInToMyPlantDiary() {
 		
-		plants = specimenService.fetchPlants("kdjddidod;odod");
+		try {
+			plants = specimenService.fetchPlants("kdjddidod;odod");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
 	private void whenUserSearchesForEasternRedbud() {
-		plants = specimenService.fetchPlants("Eastern Redbud");
+		try {
+			plants = specimenService.fetchPlants("Eastern Redbud");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private void whenUserAddsTextDetails() {

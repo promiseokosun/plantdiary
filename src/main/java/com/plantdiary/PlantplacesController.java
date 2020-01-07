@@ -66,8 +66,15 @@ public class PlantplacesController {
 	@RequestMapping(value="/searchplants")
 	public String searchPlants(@RequestParam(value="searchTerm") String searchTerm){
 		
-		//String enhancedTerm = searchTerm + "";
-		List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
+		try {
+			List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
+			
+			// save fetchPlants to a model for the view to use
+		} catch (Exception e) {
+			// log error
+			e.printStackTrace();
+			return "error";
+		}
 		
 		return "redirect:start";
 	}
@@ -79,6 +86,11 @@ public class PlantplacesController {
 		requestParam.get("searchTerm");
 	
 		return "redirect:start";
+	}
+	
+	@RequestMapping("/sustainability")
+	public String sustainability(){
+		return "sustainability";
 	}
 	
 
