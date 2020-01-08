@@ -1,14 +1,18 @@
 package com.plantdiary;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.plantdiary.dto.PlantDTO;
 import com.plantdiary.dto.SpecimenDTO;
@@ -16,6 +20,8 @@ import com.plantdiary.service.ISpecimenService;
 
 @Controller
 public class PlantplacesController {
+	
+	Logger log = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
 	private ISpecimenService specimenService;
@@ -40,6 +46,7 @@ public class PlantplacesController {
 	 */
 	@RequestMapping(value="/start", method=RequestMethod.GET)
 	public String read(Model model){ 
+		log.info("User has entered the /start endpoint");
 		model.addAttribute("specimenDTO", new SpecimenDTO());
 		return "start"; 
 	}
@@ -64,19 +71,26 @@ public class PlantplacesController {
 	 * @return start template
 	 */
 	@RequestMapping(value="/searchplants")
-	public String searchPlants(@RequestParam(value="searchTerm") String searchTerm){
-		
+	public ModelAndView searchPlants(@RequestParam(value="searchTerm") String searchTerm){
+		log.debug("Entering search plants");
+		ModelAndView modelAndView = new ModelAndView();
+		List<PlantDTO> plants = new ArrayList<PlantDTO>();
 		try {
-			List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
-			
+			plants = specimenService.fetchPlants(searchTerm);
+			modelAndView.setViewName("plantResults");
+			if(plants.size() == 0){
+				log.warn("Received 0 result for search string: " + searchTerm);
+			}
 			// save fetchPlants to a model for the view to use
 		} catch (Exception e) {
 			// log error
+			log.error("Error happened in /searchplants endpoint", e);
 			e.printStackTrace();
-			return "error";
+			modelAndView.setViewName("error");
 		}
-		
-		return "redirect:start";
+		modelAndView.addObject("plants", plants);
+		log.debug("Exiting search plants");
+		return modelAndView;
 	}
 	
 	@RequestMapping(value="/searchplantall")

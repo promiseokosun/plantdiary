@@ -5,7 +5,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class PlantDTO {
 
-	@SerializedName("guid")
+	// this was gotten from jsonschema2pojo site 
+	// make sure SerializedName is id
+	@SerializedName("id")
 	@Expose
 	private int guid;
 	@SerializedName("genus")
@@ -54,8 +56,8 @@ public class PlantDTO {
 	
 	@Override
 	public String toString() {
-		return "PlantDTO [guid=" + guid + ", genus=" + genus + ", species=" + species + ", cultivar=" + cultivar
-				+ ", common=" + common + "]";
+		
+		return guid+" "+genus+" "+species+" "+cultivar+" "+common;
 	}
 	
 	
