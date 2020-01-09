@@ -34,8 +34,16 @@ public class PlantplacesController {
 	 */
 	@RequestMapping(value="/savespecimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
-		specimenDTO.setPlantId(13);
-		specimenDTO.setSpecimenId(71);
+		
+		try {
+			specimenService.save(specimenDTO);
+		} catch (Exception e) {
+			// TODO log error message
+			log.error("Unable to save specimen", e);
+			e.printStackTrace();
+			return "error";
+		}
+		
 		return "start";
 	}
 	
@@ -53,7 +61,7 @@ public class PlantplacesController {
 	
 	/**
 	 * Handl the /start endpoint.
-	 * @param model
+	 * @param model 
 	 * @param latitude
 	 * @return start template
 	 */
