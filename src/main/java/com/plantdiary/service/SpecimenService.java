@@ -19,6 +19,7 @@ public class SpecimenService implements ISpecimenService {
 	@Autowired
 	ISpecimenDAO specimenDAO;
 	
+	
 	@Override
 	public SpecimenDTO fetchById(int id) {
 		// TODO Auto-generated method stub
@@ -49,5 +50,11 @@ public class SpecimenService implements ISpecimenService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception{
+		return specimenDAO.fetchAll();
+	}
+	
 
 }

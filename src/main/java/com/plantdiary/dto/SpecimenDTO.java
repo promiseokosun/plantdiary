@@ -1,20 +1,30 @@
 package com.plantdiary.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="specimens", schema="plants")
 public class SpecimenDTO {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="specimen_id")
 	private int specimenId;
+	@Column(name="latitude")
 	private String latitude;
+	@Column(name="longitude")
 	private String longitude;
+	@Column(name="description")
 	private String description;
+	@Column(name="plant_Id")
 	private int plantId;
+	@Column(name="plant_name")
+	private String plantName;
 	
 	public int getSpecimenId() {
 		return specimenId;
@@ -46,6 +56,12 @@ public class SpecimenDTO {
 	}
 	public void setPlantId(int plantId) {
 		this.plantId = plantId;
+	}
+	public String getPlantName() {
+		return plantName;
+	}
+	public void setPlantName(String plantName) {
+		this.plantName = plantName;
 	}
 	@Override
 	public String toString() {
