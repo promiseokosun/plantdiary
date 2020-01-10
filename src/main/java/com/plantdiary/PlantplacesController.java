@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.plantdiary.dto.PlantDTO;
@@ -131,6 +132,23 @@ public class PlantplacesController {
 		return modelAndView;
 	}
 	
+	@RequestMapping(value="/plantNamesAutocomplete")
+	@ResponseBody // using response body so that this endpoint will only give me data and not another view
+	public List<String> plantNamesAutocomplete(@RequestParam(value="term", required=false, defaultValue="") String term){
+		List<String> suggestions = new ArrayList<String>();
+		try {
+			List<PlantDTO> allPlants = specimenService.fetchPlants(term);
+			for (PlantDTO plantDTO : allPlants) {
+				suggestions.add(plantDTO.toString());
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			log.error("Unable to fetch json data from plantplaces.com", e);
+		}
+			
+		return suggestions;
+	}
 
 	
 }

@@ -63,15 +63,13 @@ public class SpecimenServiceStub implements ISpecimenService {
 		this.specimenDAO = specimenDAO;
 	}
 
-	public Iterable<SpecimenDTO> fetchAllPlants() throws Exception {
-		return null;
-	}
-
 	@Override
 	public Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
 	
 
 }
