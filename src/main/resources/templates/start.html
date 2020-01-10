@@ -10,6 +10,24 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script type="text/javascript">
+	  $( function() {
+	    var availableTags = [
+	      "ActionScript",
+	      "AppleScript",
+	      "Asp"
+	    ];
+	    $( "#tag" ).autocomplete({
+	      source: availableTags
+	    });
+	  } );
+  </script> 
+
 </head>
 <body>
 <!-- th:replace -->
@@ -51,7 +69,7 @@ Your specimen is: <p th:text="${specimenDTO}" />
 	  <div class="input-group-prepend">
 	    <span class="input-group-text" id="inputGroup-sizing-sm">Plant Name</span>
 	  </div>
-	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="plantName" th:field="*{plantName}" >
+	  <input id="tag" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="plantName" th:field="*{plantName}" >
 	</div>
 
 
