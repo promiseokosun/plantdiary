@@ -29,7 +29,7 @@ public class PlantDAO implements IPlantDAO {
 		List<PlantDTO> allPlants = new ArrayList<PlantDTO>();
 		
 		String rawJson = networkDAO.request("http://plantplaces.com/perl/mobile/viewplantsjson.pl?Combined_Name=Oak");
-		
+		//convert data to JSON array
 		JSONObject root = new JSONObject(rawJson);
 		JSONArray plants = root.getJSONArray("plants");
 		
@@ -71,7 +71,6 @@ public class PlantDAO implements IPlantDAO {
 		Response<PlantList> execute = allPlants.execute();
 		PlantList plantList = execute.body();
 		List<PlantDTO> plants = plantList.getPlants();
-		
 		
 		return plants;
 	}

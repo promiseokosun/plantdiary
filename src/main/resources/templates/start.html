@@ -85,7 +85,7 @@ Your specimen is: <p th:text="${specimenDTO}" />
   <script type="text/javascript">
 	  $( function() {
 	    $( "#Plant_Name" ).autocomplete({
-	      source: "plantNamesAutocomplete",
+	      source: "plantNamesAutocomplete", // this returns localhost:8080/plantNamesAutocomplete?term=      
 	      minLength: 3,
 	      delay: 5
 	      //focus: false

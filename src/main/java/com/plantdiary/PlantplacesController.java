@@ -27,6 +27,10 @@ public class PlantplacesController {
 	@Autowired
 	private ISpecimenService specimenService;
 	private SpecimenDTO specimenDTO;
+
+	private List<PlantDTO> allPlants;
+
+	private String firstThreeCharacters;
 	
 	/**
 	 * Handle the /savespecimen endpoint
@@ -115,6 +119,10 @@ public class PlantplacesController {
 		return "sustainability";
 	}
 	
+	/**
+	 * Retrieve specimens and display
+	 * @return showSpecimens template
+	 */
 	@RequestMapping("/showSpecimens")
 	public ModelAndView showSpecimens(){
 		ModelAndView modelAndView = new ModelAndView();
@@ -132,14 +140,27 @@ public class PlantplacesController {
 		return modelAndView;
 	}
 	
+	/**
+	 * Handles the auto-complete
+	 * @param term - http://localhost:8080/plantNamesAutocomplete?term=Redbud
+	 * @return plants JSON data from plantplaces.com API
+	 */
 	@RequestMapping(value="/plantNamesAutocomplete")
 	@ResponseBody // using response body so that this endpoint will only give me data and not another view
 	public List<String> plantNamesAutocomplete(@RequestParam(value="term", required=false, defaultValue="") String term){
-		List<String> suggestions = new ArrayList<String>();
+		List<String> suggestions = new ArrayList<String>(); // a new list object is created for every 3+ word entered
 		try {
-			List<PlantDTO> allPlants = specimenService.fetchPlants(term);
+			if(term.length() == 3){
+				firstThreeCharacters = term;
+				allPlants = specimenService.fetchPlants(term); //fetchPlants should be called once as the user types
+			}
+			
 			for (PlantDTO plantDTO : allPlants) {
-				suggestions.add(plantDTO.toString());
+				// filter the plant result in the allPlants list	
+				if(plantDTO.toString().contains(term)){
+					suggestions.add(plantDTO.toString());
+				}
+				
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
