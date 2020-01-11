@@ -57,7 +57,7 @@ public class PlantDTO {
 	@Override
 	public String toString() {
 		
-		return guid+" "+genus+" "+species+" "+cultivar+" "+common;
+		return genus+" "+species+" "+cultivar+" "+common;
 	}
 	
 	

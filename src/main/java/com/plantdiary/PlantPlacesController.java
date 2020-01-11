@@ -15,12 +15,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.plantdiary.dto.LabelValue;
 import com.plantdiary.dto.PlantDTO;
 import com.plantdiary.dto.SpecimenDTO;
 import com.plantdiary.service.ISpecimenService;
 
 @Controller
-public class PlantplacesController {
+public class PlantPlacesController {
 	
 	Logger log = LoggerFactory.getLogger(this.getClass());
 	
@@ -48,7 +49,7 @@ public class PlantplacesController {
 			return "error";
 		}
 		
-		return "start";
+		return "redirect:start";
 	}
 	
 	/**
@@ -147,8 +148,8 @@ public class PlantplacesController {
 	 */
 	@RequestMapping(value="/plantNamesAutocomplete")
 	@ResponseBody // using response body so that this endpoint will only give me data and not another view
-	public List<String> plantNamesAutocomplete(@RequestParam(value="term", required=false, defaultValue="") String term){
-		List<String> suggestions = new ArrayList<String>(); // a new list object is created for every 3+ word entered
+	public List<LabelValue> plantNamesAutocomplete(@RequestParam(value="term", required=false, defaultValue="") String term){
+		List<LabelValue> suggestions = new ArrayList<LabelValue>(); // a new list object is created for every 3+ word entered
 		try {
 			if(term.length() == 3){
 				firstThreeCharacters = term;
@@ -158,7 +159,10 @@ public class PlantplacesController {
 			for (PlantDTO plantDTO : allPlants) {
 				// filter the plant result in the allPlants list	
 				if(plantDTO.toString().contains(term)){
-					suggestions.add(plantDTO.toString());
+					LabelValue labelValue = new LabelValue(); 
+					labelValue.setLabel(plantDTO.toString());// convert data to JSON format
+					labelValue.setValue(Integer.toString(plantDTO.getGuid()));
+					suggestions.add(labelValue); //cache data
 				}
 				
 			}
