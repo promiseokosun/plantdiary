@@ -2,7 +2,10 @@ package com.plantdiary.service;
 
 import java.util.List;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import com.plantdiary.dao.ISpecimenDAO;
+import com.plantdiary.dto.PhotoDTO;
 import com.plantdiary.dto.PlantDTO;
 import com.plantdiary.dto.SpecimenDTO;
 
@@ -33,5 +36,7 @@ public interface ISpecimenService {
 	ISpecimenDAO getSpecimenDAO();
 
 	Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception;
+
+	void saveImage(MultipartFile imageFile, PhotoDTO photoDTO) throws Exception;
 
 }

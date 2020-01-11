@@ -5,9 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
+import com.plantdiary.dao.IPhotoDAO;
 import com.plantdiary.dao.IPlantDAO;
 import com.plantdiary.dao.ISpecimenDAO;
+import com.plantdiary.dto.PhotoDTO;
 import com.plantdiary.dto.PlantDTO;
 import com.plantdiary.dto.SpecimenDTO;
 
@@ -19,6 +22,9 @@ public class SpecimenService implements ISpecimenService {
 	
 	@Autowired
 	ISpecimenDAO specimenDAO;
+	
+	@Autowired
+	IPhotoDAO photoDAO;
 	
 	
 	@Override
@@ -56,6 +62,13 @@ public class SpecimenService implements ISpecimenService {
 	@Override
 	public Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception{
 		return specimenDAO.fetchAll();
+	}
+
+	@Override
+	public void saveImage(MultipartFile imageFile, PhotoDTO photoDTO) throws Exception {
+		// TODO 
+		photoDAO.savePhotoImage(photoDTO, imageFile); // produce the filePath
+		photoDAO.save(photoDTO); // consume the filePath
 	}
 	
 

@@ -31,7 +31,7 @@
 
 Your specimen is: <p th:text="${specimenDTO}" />
 
-<form action="#" th:action="@{/savespecimen}" th:object="${specimenDTO}" method="GET">
+<form action="#" th:action="@{/savespecimen}" th:object="${specimenDTO}" method="POST" enctype="multipart/form-data">
 	<div class="input-group input-group-sm mb-3">
 	  <div class="input-group-prepend">
 	    <span class="input-group-text" id="inputGroup-sizing-sm">Latitude</span>
@@ -61,11 +61,13 @@ Your specimen is: <p th:text="${specimenDTO}" />
 	</div>
 	<!-- hidden field to store the auto-generated id from plantplace.com -->
 	<input id="Plant_ID" type="hidden" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="plantId" th:field="*{plantId}" >
-
-
-<button type="submit" name="submit" value="0">Submit</button>
-
+	<!-- image upload -->
+	<input type="file" name="imageFile">
+	<input type="submit" value="Upload" />
 </form>
+
+
+
 
 
 <!-- Optional JavaScript -->

@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class SpecimenDTO {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue
 	@Column(name="specimen_id")
 	private int specimenId;
 	@Column(name="latitude")
@@ -25,6 +25,8 @@ public class SpecimenDTO {
 	private int plantId;
 	@Column(name="plant_name")
 	private String plantName;
+	
+	// photo_id coming soon...
 	
 	public int getSpecimenId() {
 		return specimenId;
