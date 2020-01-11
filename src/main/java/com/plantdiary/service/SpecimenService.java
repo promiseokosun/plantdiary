@@ -3,6 +3,7 @@ package com.plantdiary.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import com.plantdiary.dao.IPlantDAO;
@@ -34,9 +35,10 @@ public class SpecimenService implements ISpecimenService {
 	}
 
 	@Override
+	@Cacheable("fetchPlants")
 	public List<PlantDTO> fetchPlants(String searchTerm) throws Exception {
 		// Delegate a call to the PlantDAO 
-		return plantDAO.fetch(searchTerm); // Oak will be changed to searchTerm
+		return plantDAO.fetch(searchTerm); // from plantplaces.com 
 	}
 
 	@Override
