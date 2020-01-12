@@ -77,6 +77,12 @@ public class SpecimenServiceStub implements ISpecimenService {
 		
 	}
 
+	@Override
+	public List<SpecimenDTO> fetchSpecimensByPlantId(int plantId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 	
 

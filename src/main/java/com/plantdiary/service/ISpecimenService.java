@@ -39,4 +39,6 @@ public interface ISpecimenService {
 
 	void saveImage(MultipartFile imageFile, PhotoDTO photoDTO) throws Exception;
 
+	List<SpecimenDTO> fetchSpecimensByPlantId(int plantId);
+
 }
