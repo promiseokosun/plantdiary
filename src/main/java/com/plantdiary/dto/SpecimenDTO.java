@@ -1,10 +1,12 @@
 package com.plantdiary.dto;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +27,9 @@ public class SpecimenDTO {
 	private int plantId;
 	@Column(name="plant_name")
 	private String plantName;
+	
+	@OneToMany(mappedBy="specimenDTO")
+	private List<PhotoDTO> photos;
 	
 	// photo_id coming soon...
 	
@@ -65,6 +70,7 @@ public class SpecimenDTO {
 	public void setPlantName(String plantName) {
 		this.plantName = plantName;
 	}
+
 	@Override
 	public String toString() {
 		
