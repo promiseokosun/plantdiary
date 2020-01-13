@@ -1,11 +1,19 @@
-2020-01-12 18:13:35,315 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Received 0 result for search string: Eastern Red Oak
-2020-01-12 18:14:00,470 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Received 0 result for search string: Eastern Red Oak
-2020-01-12 18:14:12,200 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Received 0 result for search string: Eastern Red Oak
-2020-01-12 18:32:12,539 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Received 0 result for search string: Eastern Red Oak
-2020-01-12 18:32:24,644 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Received 0 result for search string: Eastern Red Oak
-2020-01-12 18:59:04,422 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Unable to fetch json data from plantplaces.com
-java.lang.NullPointerException: null
-	at com.plantdiary.PlantPlacesController.plantNamesAutocomplete(PlantPlacesController.java:187)
+2020-01-13 00:10:02,192 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Error saving photos
+org.springframework.jms.support.converter.MessageConversionException: Cannot convert object of type [sun.nio.fs.WindowsPath] to JMS message. Supported message payloads are: String, byte array, Map<String,?>, Serializable object.
+	at org.springframework.jms.support.converter.SimpleMessageConverter.toMessage(SimpleMessageConverter.java:78)
+	at org.springframework.jms.core.JmsTemplate.lambda$convertAndSend$5(JmsTemplate.java:661)
+	at org.springframework.jms.core.JmsTemplate.doSend(JmsTemplate.java:604)
+	at org.springframework.jms.core.JmsTemplate.lambda$send$3(JmsTemplate.java:586)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:504)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:584)
+	at org.springframework.jms.core.JmsTemplate.convertAndSend(JmsTemplate.java:661)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:52)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$7f8daab1.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -19,8 +27,8 @@ java.lang.NullPointerException: null
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)

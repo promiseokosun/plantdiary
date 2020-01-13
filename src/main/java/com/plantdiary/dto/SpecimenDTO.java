@@ -71,6 +71,12 @@ public class SpecimenDTO {
 		this.plantName = plantName;
 	}
 
+	public List<PhotoDTO> getPhotos() {
+		return photos;
+	}
+	public void setPhotos(List<PhotoDTO> photos) {
+		this.photos = photos;
+	}
 	@Override
 	public String toString() {
 		
