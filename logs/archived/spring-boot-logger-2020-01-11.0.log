@@ -1,0 +1,916 @@
+2020-01-11 00:52:17,369 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 7160 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 00:52:17,381 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 00:52:17,385 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 00:52:38,970 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 22.431 seconds (JVM running for 23.459)
+2020-01-11 00:52:50,552 INFO com.plantdiary.PlantplacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 01:24:51,211 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5224 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 01:24:51,211 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 01:24:51,227 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 01:25:01,852 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.522 seconds (JVM running for 12.533)
+2020-01-11 01:25:18,793 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 01:26:07,048 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 01:27:42,062 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] User has entered the /start endpoint
+2020-01-11 01:30:19,103 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 8508 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 01:30:19,121 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 01:30:19,123 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 01:30:32,051 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.756 seconds (JVM running for 14.488)
+2020-01-11 01:30:32,458 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 01:32:16,706 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] User has entered the /start endpoint
+2020-01-11 01:33:19,058 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] User has entered the /start endpoint
+2020-01-11 09:09:40,621 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 14212 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:09:40,628 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:09:40,632 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:09:55,631 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 21.109 seconds (JVM running for 24.251)
+2020-01-11 09:10:15,105 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] Unable to fetch json data from plantplaces.com
+java.lang.NullPointerException: null
+	at com.plantdiary.PlantPlacesController.plantNamesAutocomplete(PlantPlacesController.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 09:16:32,685 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 220 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:16:32,685 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:16:32,702 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:16:42,509 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.585 seconds (JVM running for 11.352)
+2020-01-11 09:17:51,319 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9852 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:17:51,328 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:17:51,332 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:18:00,973 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.404 seconds (JVM running for 11.111)
+2020-01-11 09:19:47,657 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5100 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:19:47,657 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:19:47,657 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:19:57,236 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.418 seconds (JVM running for 11.176)
+2020-01-11 09:36:22,259 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 3084 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:36:22,267 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:36:22,274 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:36:33,149 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.707 seconds (JVM running for 12.488)
+2020-01-11 09:40:49,306 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6948 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:40:49,314 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:40:49,316 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:40:59,924 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.366 seconds (JVM running for 12.145)
+2020-01-11 09:41:19,423 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 09:44:38,961 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 856 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:44:38,977 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:44:38,977 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:44:48,557 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.347 seconds (JVM running for 11.156)
+2020-01-11 09:47:33,962 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 09:48:50,277 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13968 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:48:50,277 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:48:50,277 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:49:00,845 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.301 seconds (JVM running for 12.0)
+2020-01-11 09:49:07,077 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 09:53:48,824 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 460 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:53:48,834 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:53:48,843 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:53:58,464 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.789 seconds (JVM running for 11.459)
+2020-01-11 09:54:02,270 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 09:54:23,377 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-11 09:57:20,797 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13612 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:57:20,797 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:57:20,797 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 09:57:30,597 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.55 seconds (JVM running for 11.255)
+2020-01-11 09:57:46,344 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 09:59:52,592 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6024 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 09:59:52,608 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 09:59:52,608 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:00:02,485 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 10.771 seconds (JVM running for 11.446)
+2020-01-11 10:00:07,358 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 10:01:05,571 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9960 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:01:05,571 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:01:05,586 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:01:16,421 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.616 seconds (JVM running for 12.332)
+2020-01-11 10:01:19,873 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:04:11,617 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6392 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:04:11,622 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:04:11,625 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:04:21,970 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.299 seconds (JVM running for 12.021)
+2020-01-11 10:04:46,034 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 10:08:59,545 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 7132 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:08:59,555 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:08:59,555 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:09:10,088 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.276 seconds (JVM running for 12.116)
+2020-01-11 10:09:19,173 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:09:51,144 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-11 10:34:29,892 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 11128 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:34:29,908 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:34:29,908 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:34:41,504 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 12.474 seconds (JVM running for 13.951)
+2020-01-11 10:39:09,110 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12220 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:39:09,118 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:39:09,118 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:39:20,605 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 12.328 seconds (JVM running for 13.108)
+2020-01-11 10:39:30,354 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:41:44,856 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13728 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:41:44,856 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:41:44,871 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:41:57,861 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.923 seconds (JVM running for 14.735)
+2020-01-11 10:42:02,739 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:44:03,655 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5112 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:44:03,670 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:44:03,670 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:44:13,937 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.163 seconds (JVM running for 11.987)
+2020-01-11 10:44:36,393 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:45:48,453 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13876 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:45:48,453 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:45:48,468 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:46:00,741 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.264 seconds (JVM running for 14.064)
+2020-01-11 10:46:05,659 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:55:28,557 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 8992 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:55:28,573 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:55:28,573 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:55:41,238 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.543 seconds (JVM running for 14.368)
+2020-01-11 10:55:46,795 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 10:57:53,210 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 4872 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 10:57:53,225 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 10:57:53,225 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 10:58:06,132 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.755 seconds (JVM running for 14.952)
+2020-01-11 10:58:19,935 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 10:59:03,534 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Entering search plants
+2020-01-11 10:59:18,522 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Exiting search plants
+2020-01-11 11:00:28,649 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6528 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 11:00:28,665 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 11:00:28,665 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 11:00:41,352 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.544 seconds (JVM running for 14.593)
+2020-01-11 11:00:48,734 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 11:01:49,519 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Entering search plants
+2020-01-11 11:01:58,918 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Exiting search plants
+2020-01-11 11:29:20,867 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12396 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 11:29:20,883 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 11:29:20,889 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 11:29:33,960 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.979 seconds (JVM running for 14.74)
+2020-01-11 11:29:45,370 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 11:32:59,664 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6576 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 11:32:59,676 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 11:32:59,676 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 11:33:13,851 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 15.258 seconds (JVM running for 16.069)
+2020-01-11 11:33:22,387 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 11:34:39,807 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12256 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 11:34:39,846 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 11:34:39,853 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 11:34:53,707 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 14.809 seconds (JVM running for 15.834)
+2020-01-11 11:34:55,990 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 11:48:05,796 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 2296 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 11:48:05,806 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 11:48:05,816 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 11:48:18,712 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.764 seconds (JVM running for 14.48)
+2020-01-11 11:48:25,749 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 13:56:46,800 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 1832 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 13:56:46,861 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 13:56:46,870 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 13:57:01,657 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 15.727 seconds (JVM running for 16.547)
+2020-01-11 13:57:08,161 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 14:10:39,309 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13856 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 14:10:39,320 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 14:10:39,322 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 14:10:53,001 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 14.542 seconds (JVM running for 15.349)
+2020-01-11 14:11:01,691 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 14:19:31,532 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9756 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 14:19:31,541 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 14:19:31,551 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 14:19:43,982 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.171 seconds (JVM running for 13.857)
+2020-01-11 14:21:30,987 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 14:22:41,435 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-11 15:53:24,873 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 14564 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 15:53:24,873 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 15:53:24,889 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 15:53:35,668 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.531 seconds (JVM running for 12.238)
+2020-01-11 15:53:40,440 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 15:54:14,273 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Unable to fetch json data from plantplaces.com
+java.net.UnknownHostException: plantplaces.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at okhttp3.Dns$1.lookup(Dns.java:39)
+	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:171)
+	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.java:137)
+	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.java:82)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:171)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:185)
+	at okhttp3.RealCall.execute(RealCall.java:69)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:180)
+	at com.plantdiary.dao.PlantDAO.fetch(PlantDAO.java:71)
+	at com.plantdiary.service.SpecimenService.fetchPlants(SpecimenService.java:47)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:336)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:391)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:316)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$cd844349.fetchPlants(<generated>)
+	at com.plantdiary.PlantPlacesController.plantNamesAutocomplete(PlantPlacesController.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 16:00:58,672 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12256 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:00:58,672 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:00:58,687 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:01:14,377 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 16.566 seconds (JVM running for 17.722)
+2020-01-11 16:01:57,392 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] User has entered the /start endpoint
+2020-01-11 16:09:17,121 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 3472 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:09:17,121 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:09:17,136 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:09:30,320 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 14.016 seconds (JVM running for 15.139)
+2020-01-11 16:09:35,620 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 16:13:41,757 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Error saving photos
+java.nio.file.NoSuchFileException: C:\Users\User\workspace\plantdiary\.\src\main\resources\photos\bing-MG-9826.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at java.nio.file.Files.write(Files.java:3292)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:46)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$fd298756.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 16:21:50,308 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13204 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:21:50,321 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:21:50,323 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:22:04,371 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 15.096 seconds (JVM running for 15.89)
+2020-01-11 16:22:09,580 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] User has entered the /start endpoint
+2020-01-11 16:39:21,730 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 4816 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:39:21,746 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:39:21,746 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:39:35,986 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 15.104 seconds (JVM running for 15.883)
+2020-01-11 16:39:44,204 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 16:55:06,361 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9080 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:55:06,367 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:55:06,367 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:55:17,489 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 11.866 seconds (JVM running for 12.531)
+2020-01-11 16:57:21,522 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13456 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 16:57:21,522 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 16:57:21,522 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 16:57:37,949 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.309 seconds (JVM running for 18.085)
+2020-01-11 16:57:39,246 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] User has entered the /start endpoint
+2020-01-11 17:05:06,644 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5084 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 17:05:06,660 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 17:05:06,669 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 17:05:17,903 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 12.011 seconds (JVM running for 12.682)
+2020-01-11 17:05:57,283 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 17:09:20,514 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 8724 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 17:09:20,535 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 17:09:20,540 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 17:09:32,964 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 13.283 seconds (JVM running for 13.964)
+2020-01-11 17:09:36,033 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 18:49:14,203 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 11340 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 18:49:14,248 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 18:49:14,253 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 18:49:40,290 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 27.312 seconds (JVM running for 28.996)
+2020-01-11 18:50:49,488 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13268 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 18:50:49,510 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 18:50:49,517 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 18:51:07,954 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 19.829 seconds (JVM running for 21.19)
+2020-01-11 18:51:38,596 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-11 19:00:43,405 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 8516 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 19:00:43,416 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 19:00:43,421 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 19:00:59,222 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 16.903 seconds (JVM running for 18.12)
+2020-01-11 19:01:14,942 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 19:03:17,197 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 19:04:06,669 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Error saving photos
+java.nio.file.InvalidPathException: Illegal char <:> at index 71: C:\Users\User\workspace\plantdiary\./src/main/resources/static/photos/C:\Users\User\Desktop\My_Files\img\b.jpg
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:46)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$9b88197d.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 19:04:10,917 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-4] User has entered the /start endpoint
+2020-01-11 19:04:48,016 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Error saving photos
+java.nio.file.InvalidPathException: Illegal char <:> at index 71: C:\Users\User\workspace\plantdiary\./src/main/resources/static/photos/C:\photos\BingWallpaper-2019-12-26.jpg
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:46)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$9b88197d.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 19:05:03,198 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] User has entered the /start endpoint
+2020-01-11 19:10:55,607 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6992 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 19:10:55,617 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 19:10:55,622 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 19:11:12,289 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.767 seconds (JVM running for 19.092)
+2020-01-11 19:11:12,862 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 19:19:00,948 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] User has entered the /start endpoint
+2020-01-11 19:19:08,147 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] User has entered the /start endpoint
+2020-01-11 19:36:03,209 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12780 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 19:36:03,225 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 19:36:03,225 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 19:36:19,109 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.042 seconds (JVM running for 18.283)
+2020-01-11 19:36:30,953 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-11 19:37:34,480 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Unable to save specimen
+org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:314)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:527)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy88.save(Unknown Source)
+	at com.plantdiary.dao.SpecimenDao.save(SpecimenDao.java:17)
+	at com.plantdiary.service.SpecimenService.save(SpecimenService.java:39)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$b154706b.save(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:42)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2933)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3524)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:637)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113)
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:783)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
+	at com.sun.proxy.$Proxy82.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:305)
+	at com.sun.proxy.$Proxy82.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:490)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 70 common frames omitted
+Caused by: java.sql.SQLException: Incorrect string value: '\xC2\x99 Red...' for column 'plant_name' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175)
+	... 119 common frames omitted
+2020-01-11 20:18:32,050 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 10524 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 20:18:32,050 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 20:18:32,066 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 20:18:51,624 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 20.753 seconds (JVM running for 22.235)
+2020-01-11 20:18:51,985 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 20:35:32,398 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9448 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 20:35:32,398 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 20:35:32,414 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 20:35:49,087 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.727 seconds (JVM running for 18.635)
+2020-01-11 20:35:54,858 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 20:38:16,190 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 20:38:55,422 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-4] Error saving photos
+java.nio.file.InvalidPathException: Illegal char <:> at index 71: C:\Users\User\workspace\plantdiary\./src/main/resources/static/photos/C:\Users\User\Desktop\My_Files\img\variety.PNG
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:46)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$396613c7.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 20:39:05,116 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-11 20:41:16,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on DESKTOP-MV5RI2B with PID 1120 (started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 20:41:16,294 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 20:41:16,306 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 20:41:32,132 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 17.352 seconds (JVM running for 20.247)
+2020-01-11 20:42:16,567 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 11856 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 20:42:16,567 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 20:42:16,583 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 20:42:32,735 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.19 seconds (JVM running for 18.116)
+2020-01-11 20:42:41,520 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 20:44:16,277 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9624 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-11 20:44:16,277 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-11 20:44:16,295 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-11 20:44:33,739 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 18.751 seconds (JVM running for 19.767)
+2020-01-11 20:44:37,594 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-11 20:45:15,792 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Error saving photos
+java.nio.file.InvalidPathException: Illegal char <:> at index 71: C:\Users\User\workspace\plantdiary\./src/main/resources/static/photos/C:\Users\User\Desktop\My_Files\img\j.jpg
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.plantdiary.dao.PhotoDAO.savePhotoImage(PhotoDAO.java:46)
+	at com.plantdiary.service.SpecimenService.saveImage(SpecimenService.java:70)
+	at com.plantdiary.service.SpecimenService$$FastClassBySpringCGLIB$$abbd490b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.plantdiary.service.SpecimenService$$EnhancerBySpringCGLIB$$92300a6a.saveImage(<generated>)
+	at com.plantdiary.PlantPlacesController.saveSpecimen(PlantPlacesController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-11 20:45:24,538 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-4] User has entered the /start endpoint
+2020-01-11 20:46:11,060 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint

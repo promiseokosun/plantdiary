@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Insert title here</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- auto-complete style-sheet -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+<!-- 
+  <script type="text/javascript">
+  	.ui-autocomplete-loading {
+  		background: white url("images/ui-anim_basic_16xi6.gif") right center no-repeat;
+  	}
+  </script>  -->
+  
+  
+  
+
+</head>
+<body>
+<!-- th:replace -->
+<div th:replace="fragments/topnav :: navbar">
+</div>
+<h1>Saved Successfully!</h1>
+Your specimen is: <p th:text="${specimenDTO}" />
+
+<form action="#" th:action="@{/savespecimen}" th:object="${specimenDTO}" method="POST" enctype="multipart/form-data">
+	<div class="input-group input-group-sm mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-sm">Latitude</span>
+	  </div>
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="latitude" th:field="*{latitude}" >
+	</div>
+
+	<div class="input-group input-group-sm mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-sm">Longitude</span>
+	  </div>
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="longitude" th:field="*{longitude}" >
+	</div>
+	
+	<div class="input-group input-group-sm mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+	  </div>
+	  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="description" th:field="*{description}" >
+	</div>
+	
+	<div class="input-group input-group-sm mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-sm">Plant Name</span>
+	  </div>
+	  <input id="Plant_Name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="plantName" th:field="*{plantName}" >
+	</div>
+	<!-- hidden field to store the auto-generated id from plantplace.com -->
+	<input id="Plant_ID" type="hidden" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="plantId" th:field="*{plantId}" >
+	<!-- image upload -->
+	<input type="file" name="imageFile">
+	<input type="submit" value="Upload" />
+</form>
+<br/><br/>
+<img th:src="@{${'/photos/' + photoDTO.fileName}}" alt="A photo display" height="400" width="400"/>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Auto-complete library-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript">
+	  $( function() {
+	    $( "#Plant_Name" ).autocomplete({
+	      source: "plantNamesAutocomplete", // this returns localhost:8080/plantNamesAutocomplete?term=      
+	      minLength: 3,
+	      delay: 5,
+	      //twicking the label and value from LabelValueDTO
+	      select: function(event, ui) {
+	    	  this.value = ui.item.label; // save label as value to #Plant_Name
+	    	  $("#Plant_ID").val(ui.item.value); // save value to #Plant_ID
+	    	  return false;
+	      }
+	    });
+	  } );
+  </script> 
+
+</body>
+</html>

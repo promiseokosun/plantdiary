@@ -1,0 +1,207 @@
+2020-01-12 18:12:21,565 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 6280 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 18:12:21,579 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 18:12:21,595 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 18:12:39,684 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 19.146 seconds (JVM running for 20.399)
+2020-01-12 18:12:59,006 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 18:13:13,332 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-4] User has entered the /start endpoint
+2020-01-12 18:13:31,067 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Entering search plants
+2020-01-12 18:13:35,315 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Received 0 result for search string: Eastern Red Oak
+2020-01-12 18:13:35,319 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Exiting search plants
+2020-01-12 18:14:00,461 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Entering search plants
+2020-01-12 18:14:00,470 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Received 0 result for search string: Eastern Red Oak
+2020-01-12 18:14:00,470 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Exiting search plants
+2020-01-12 18:14:12,196 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Entering search plants
+2020-01-12 18:14:12,200 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Received 0 result for search string: Eastern Red Oak
+2020-01-12 18:14:12,202 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Exiting search plants
+2020-01-12 18:32:12,535 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Entering search plants
+2020-01-12 18:32:12,539 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Received 0 result for search string: Eastern Red Oak
+2020-01-12 18:32:12,546 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Exiting search plants
+2020-01-12 18:32:24,644 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Entering search plants
+2020-01-12 18:32:24,644 WARN com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Received 0 result for search string: Eastern Red Oak
+2020-01-12 18:32:24,661 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Exiting search plants
+2020-01-12 18:32:43,054 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] Entering search plants
+2020-01-12 18:32:44,125 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] Exiting search plants
+2020-01-12 18:55:07,960 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13628 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 18:55:07,998 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 18:55:07,998 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 18:55:24,823 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.911 seconds (JVM running for 18.917)
+2020-01-12 18:55:42,313 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 15124 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 18:55:42,329 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 18:55:42,329 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 18:56:04,658 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 23.586 seconds (JVM running for 24.988)
+2020-01-12 18:56:31,924 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 18:56:46,193 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Entering search plants
+2020-01-12 18:57:03,623 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Exiting search plants
+2020-01-12 18:59:04,422 ERROR com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Unable to fetch json data from plantplaces.com
+java.lang.NullPointerException: null
+	at com.plantdiary.PlantPlacesController.plantNamesAutocomplete(PlantPlacesController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-12 19:07:56,692 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13632 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:07:56,702 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:07:56,702 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:08:16,506 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 20.999 seconds (JVM running for 22.142)
+2020-01-12 19:08:27,509 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] Entering search plants
+2020-01-12 19:08:37,271 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] Exiting search plants
+2020-01-12 19:11:51,905 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 10488 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:11:51,920 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:11:51,920 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:12:10,977 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 20.316 seconds (JVM running for 21.472)
+2020-01-12 19:13:38,273 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 11200 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:13:38,289 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:13:38,291 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:13:58,322 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 21.221 seconds (JVM running for 22.66)
+2020-01-12 19:14:17,298 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] Entering search plants
+2020-01-12 19:14:18,997 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] User has entered the /start endpoint
+2020-01-12 19:14:26,613 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] Exiting search plants
+2020-01-12 19:14:38,500 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-4] User has entered the /start endpoint
+2020-01-12 19:14:47,232 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Entering search plants
+2020-01-12 19:14:47,240 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-6] Exiting search plants
+2020-01-12 19:19:37,053 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 12076 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:19:37,053 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:19:37,068 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:20:23,245 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 47.364 seconds (JVM running for 48.559)
+2020-01-12 19:20:36,690 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 19:20:41,668 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Entering search plants
+2020-01-12 19:20:59,872 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Exiting search plants
+2020-01-12 19:22:37,388 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 1140 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:22:37,404 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:22:37,404 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:23:05,968 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 29.746 seconds (JVM running for 30.893)
+2020-01-12 19:23:15,849 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 19:23:20,369 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Entering search plants
+2020-01-12 19:23:39,810 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Exiting search plants
+2020-01-12 19:43:59,296 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 11744 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:43:59,312 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:43:59,312 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:44:18,046 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 20.252 seconds (JVM running for 21.305)
+2020-01-12 19:44:28,774 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 19:44:33,527 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Entering search plants
+2020-01-12 19:44:35,714 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Exiting search plants
+2020-01-12 19:44:44,522 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] User has entered the /start endpoint
+2020-01-12 19:44:57,828 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Entering search plants
+2020-01-12 19:44:57,835 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Exiting search plants
+2020-01-12 19:45:06,912 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Entering search plants
+2020-01-12 19:45:06,916 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Exiting search plants
+2020-01-12 19:46:03,980 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] User has entered the /start endpoint
+2020-01-12 19:57:45,624 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5080 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 19:57:45,646 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 19:57:45,646 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 19:58:09,111 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 24.643 seconds (JVM running for 25.82)
+2020-01-12 19:58:12,787 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] User has entered the /start endpoint
+2020-01-12 19:58:18,866 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Entering search plants
+2020-01-12 19:58:33,384 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Exiting search plants
+2020-01-12 20:03:07,109 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 13928 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 20:03:07,124 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 20:03:07,124 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 20:03:29,016 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 23.159 seconds (JVM running for 24.51)
+2020-01-12 22:18:58,923 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Entering search plants
+2020-01-12 22:36:32,912 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] Entering search plants
+2020-01-12 22:36:56,504 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Exiting search plants
+2020-01-12 22:37:02,229 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-5] Exiting search plants
+2020-01-12 22:42:53,430 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 7400 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 22:42:53,430 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 22:42:53,446 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 22:43:45,444 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 52.891 seconds (JVM running for 52.385)
+2020-01-12 22:45:12,762 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] User has entered the /start endpoint
+2020-01-12 22:45:19,946 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Entering search plants
+2020-01-12 22:45:41,939 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] Exiting search plants
+2020-01-12 22:56:18,254 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9900 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 22:56:18,272 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 22:56:18,272 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 22:56:35,561 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 18.178 seconds (JVM running for 19.432)
+2020-01-12 22:56:52,420 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 22:56:59,404 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] Entering search plants
+2020-01-12 22:57:15,593 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-10] Exiting search plants
+2020-01-12 23:01:03,382 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 14528 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:01:03,398 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:01:03,398 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:01:21,200 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 18.866 seconds (JVM running for 19.81)
+2020-01-12 23:01:37,623 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 23:01:44,759 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Entering search plants
+2020-01-12 23:01:57,233 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Exiting search plants
+2020-01-12 23:16:55,016 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] User has entered the /start endpoint
+2020-01-12 23:36:49,936 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 7828 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:36:49,936 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:36:49,951 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:37:36,351 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 47.334 seconds (JVM running for 48.323)
+2020-01-12 23:37:42,166 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-9] User has entered the /start endpoint
+2020-01-12 23:37:47,621 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Entering search plants
+2020-01-12 23:38:07,959 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] Exiting search plants
+2020-01-12 23:39:24,926 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 9944 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:39:24,936 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:39:24,946 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:39:41,199 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 17.282 seconds (JVM running for 18.1)
+2020-01-12 23:39:45,971 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] User has entered the /start endpoint
+2020-01-12 23:39:49,798 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Entering search plants
+2020-01-12 23:40:02,106 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-3] Exiting search plants
+2020-01-12 23:41:30,594 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 1444 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:41:30,604 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:41:30,604 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:41:48,270 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 18.564 seconds (JVM running for 19.499)
+2020-01-12 23:41:57,079 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-8] User has entered the /start endpoint
+2020-01-12 23:42:05,084 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Entering search plants
+2020-01-12 23:42:17,054 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-7] Exiting search plants
+2020-01-12 23:45:14,474 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 3948 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:45:14,490 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:45:14,490 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:45:36,482 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 22.902 seconds (JVM running for 23.715)
+2020-01-12 23:45:41,025 INFO com.plantdiary.PlantPlacesController [http-nio-8080-exec-1] User has entered the /start endpoint
+2020-01-12 23:45:44,763 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Entering search plants
+2020-01-12 23:45:54,274 DEBUG com.plantdiary.PlantPlacesController [http-nio-8080-exec-2] Exiting search plants
+2020-01-12 23:58:24,192 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantdiaryApplication on DESKTOP-MV5RI2B with PID 5560 (C:\Users\User\workspace\plantdiary\target\classes started by User in C:\Users\User\workspace\plantdiary)
+2020-01-12 23:58:24,202 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2020-01-12 23:58:24,202 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-01-12 23:59:21,908 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantdiaryApplication in 58.824 seconds (JVM running for 61.598)
